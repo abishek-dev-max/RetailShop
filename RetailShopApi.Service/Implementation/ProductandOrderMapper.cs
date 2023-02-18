@@ -13,8 +13,9 @@ namespace RetailShopApi.Service.Implementation
     {
         public ProductandOrderMapper() 
         {
-            CreateMap<Product,ProductViewModel>().ReverseMap();
-            CreateMap<Order,OrderViewModel>().ReverseMap();
+            CreateMap<Product,ProductViewModel>();
+            CreateMap<Order,OrderViewModel>();
+            CreateMap<OrderViewModel, Order>();
         }
     }
 }
